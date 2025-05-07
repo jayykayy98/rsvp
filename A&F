@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amelia & James – Wedding RSVP</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #fdf6f0;
+      color: #444;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    form {
+      margin-top: 2rem;
+    }
+    input, select, textarea {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      width: 90%;
+      max-width: 400px;
+    }
+    button {
+      background-color: #88b04b;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>You're Invited</h1>
+  <p>to the wedding of</p>
+  <h2>Aida & Firdaus</h2>
+  <p>Sunday, 14th September, 2025<br>
+  D'Sayang Event Hall & Homestay, Parit Buntar</p>
+
+  <h3>Please RSVP below</h3>
+  <form action="https://formspree.io/f/xqaqbpwa" method="POST">
+    <input type="text" name="Name" placeholder="Your Name" required><br>
+    <input type="email" name="Email" placeholder="Your Email" required><br>
+    <select name="Attendance" required>
+      <option value="">Will you attend?</option>
+      <option value="Yes">Yes, I will attend</option>
+      <option value="No">No, I can't make it</option>
+    </select><br>
+    <textarea name="Message" placeholder="Leave a note (optional)"></textarea><br>
+    <button type="submit">Submit RSVP</button>
+  </form>
+
+</body>
+</html>
